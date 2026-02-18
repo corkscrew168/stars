@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+dist/
+
+# VS Code
+.vscode/
+
+
+
+    
