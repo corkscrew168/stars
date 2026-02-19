@@ -10,7 +10,7 @@ export class StartButton extends Actor {
     super({
       pos: new Vector(
         engine.drawWidth / 2,
-        engine.drawHeight / 2 + 220
+        engine.drawHeight / 2 
       ),
       z: 9999,
     });

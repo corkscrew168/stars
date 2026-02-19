@@ -127,8 +127,8 @@ export class ControlUI extends ScreenElement {
   public enabled = false;
 
   constructor(controller: MobileController, game: Engine) {
-    const UI_WIDTH = 330;
-    const UI_HEIGHT = 140;
+    const UI_WIDTH = 370;
+    const UI_HEIGHT = 620;
 
     super({
       x: (game.screen.drawWidth - UI_WIDTH) / 2,

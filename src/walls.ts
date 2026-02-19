@@ -4,8 +4,8 @@ const TOP_WALL = 20;      // ← 上壁を 20 に
 const FLOOR = 160;
 const SIDE_WALL = 20;
 
-// 壁の色（#1a1a1a）
-const WALL_COLOR = Color.Red;
+const WALL_COLOR = Color.fromRGB(10, 10, 30);
+
 
 
 export function createWalls(
