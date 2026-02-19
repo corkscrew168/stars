@@ -86,7 +86,6 @@ async function startGame() {
 // =========================
 
   await game.start();
-　// game.showDebug(true);
 
 
 // =========================
@@ -118,36 +117,31 @@ if (Math.random() < 0.5) {
 
 
 // =========================
-// ⭐ FPS表示（画面左上）
-// =========================
-  const fpsLabel = new Label({
-  text: "FPS: 0",
-  pos: vec(10, 20),
-  font: new Font({
-    size: 16,
-    unit: FontUnit.Px,
-    color: Color.Yellow
-  })
-});
-
-fpsLabel.z = 1000; // 最前面
-game.add(fpsLabel);
-
-game.on("postupdate", (evt) => {
-  const fps = Math.round(1000 / evt.delta);
-  fpsLabel.text = `FPS: ${fps}`;
-});
-
-
-
-
-
-// =========================
 // 開発モード判定
 // =========================
   if (import.meta.env.MODE === "development") {
     
+    　// game.showDebug(true);
+
+    const fpsLabel = new Label({
+      text: "FPS: 0",
+      pos: vec(10, 20),
+      font: new Font({
+        size: 16,
+        unit: FontUnit.Px,
+        color: Color.Yellow
+      })
+    });
+
+    fpsLabel.z = 1000;
+    game.add(fpsLabel);
+
+    game.on("postupdate", (evt) => {
+      const fps = Math.round(1000 / evt.delta);
+      fpsLabel.text = `FPS: ${fps}`;
+    });
   }
+
 
 
 // =========================
